@@ -6,19 +6,19 @@
       "salary": "400000"
     },
     {
-      "id": 2,
-      "name": "Krati",
-      "salary": "500000"
-    },
-    {
       "id": 3,
       "name": "Tulika",
       "salary": "600000"
     },
     {
-      "name": "Vanshika",
-      "salary": "700000",
+      "name": "Krati",
+      "salary": "500000",
       "id": 4
+    },
+    {
+      "name": "Krati",
+      "salary": "500000",
+      "id": 5
     }
   ]
 }

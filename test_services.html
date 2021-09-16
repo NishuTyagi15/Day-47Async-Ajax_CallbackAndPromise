@@ -36,7 +36,7 @@
             });
 
         const deleteElem = document.querySelector("#delete_services");
-        const deleteURL = "http://127.0.0.1:3000/employees/4";
+        const deleteURL = "http://127.0.0.1:3000/employees/2";
         makePromiseCall("DELETE", deleteURL, false)
             .then(responseText => {
                 deleteElem.textContent = "Delete User Data: "+responseText;
@@ -47,7 +47,7 @@
 
         const postElem = document.querySelector("#post_services");
         const postURL = "http://127.0.0.1:3000/employees";
-        const emplData = {"name": "Vanshika","salary": "700000"};
+        const emplData = {"name": "Krati","salary": "500000"};
         makePromiseCall("POST", postURL, true, emplData)
             .then(responseText => {
                 postElem.textContent = "New User Added: "+responseText;
