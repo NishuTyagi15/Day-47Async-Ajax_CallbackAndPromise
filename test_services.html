@@ -35,8 +35,8 @@
                 getElem.textContent = "GET Error Status: "+JSON.stringify(error);
             });
 
-        const deleteElem = document.querySelector("#delete_services");
-        const deleteURL = "http://127.0.0.1:3000/employees/4";
+            const deleteElem = document.querySelector("#delete_services");
+        const deleteURL = "http://localhost:3000/employees/4";
         makePromiseCall("DELETE", deleteURL, false)
             .then(responseText => {
                 deleteElem.textContent = "Delete User Data: "+responseText;
@@ -46,7 +46,7 @@
             });
 
         const postElem = document.querySelector("#post_services");
-        const postURL = "http://127.0.0.1:3000/employees";
+        const postURL = "http://localhost:3000/employees";
         const emplData = {"name": "Krati","salary": "700000"};
         makePromiseCall("POST", postURL, true, emplData)
             .then(responseText => {
