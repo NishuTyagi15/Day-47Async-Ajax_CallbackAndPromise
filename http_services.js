@@ -19,7 +19,7 @@ function makePromiseCall(methodType, url, async = true, data = null){
         xhr.onerror = function () {
             reject({
                 status: this.status,
-                statusText = xhttp.statusText
+                statusText: xhttp.statusText
             });
         };
 
